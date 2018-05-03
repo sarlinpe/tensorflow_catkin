@@ -1,0 +1,36 @@
+diff --git a/tensorflow/contrib/cmake/tf_tools.cmake b/tensorflow/contrib/cmake/tf_tools.cmake
+index 58c7df9..ec5a760 100644
+--- a/tensorflow/contrib/cmake/tf_tools.cmake
++++ b/tensorflow/contrib/cmake/tf_tools.cmake
+@@ -78,6 +78,7 @@ target_link_libraries(${transform_graph} PUBLIC
+   tf_protos_cc
+   ${tf_core_gpu_kernels_lib}
+   ${tensorflow_EXTERNAL_LIBRARIES}
++  gomp
+ )
+ 
+ set(summarize_graph "summarize_graph")
+@@ -100,6 +101,7 @@ target_link_libraries(${summarize_graph} PUBLIC
+   tf_protos_cc
+   ${tf_core_gpu_kernels_lib}
+   ${tensorflow_EXTERNAL_LIBRARIES}
++  gomp
+ )
+ 
+ set(compare_graphs "compare_graphs")
+@@ -122,6 +124,7 @@ target_link_libraries(${compare_graphs} PUBLIC
+   tf_protos_cc
+   ${tf_core_gpu_kernels_lib}
+   ${tensorflow_EXTERNAL_LIBRARIES}
++  gomp
+ )
+ 
+ set(benchmark_model "benchmark_model")
+@@ -143,6 +146,7 @@ target_link_libraries(${benchmark_model} PUBLIC
+   tf_protos_cc
+   ${tf_core_gpu_kernels_lib}
+   ${tensorflow_EXTERNAL_LIBRARIES}
++  gomp
+ )
+ 
+ install(TARGETS ${transform_graph} ${summarize_graph} ${compare_graphs} ${benchmark_model}
