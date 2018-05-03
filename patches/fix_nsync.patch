@@ -1,0 +1,11 @@
+diff --git a/tensorflow/contrib/cmake/tf_shared_lib.cmake b/tensorflow/contrib/cmake/tf_shared_lib.cmake
+index 9738bbe..8ec1bc1 100644
+--- a/tensorflow/contrib/cmake/tf_shared_lib.cmake
++++ b/tensorflow/contrib/cmake/tf_shared_lib.cmake
+@@ -144,3 +144,6 @@ install(DIRECTORY ${tensorflow_source_dir}/third_party/eigen3/
+ # unsupported Eigen directory
+ install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/eigen/src/eigen/unsupported/Eigen/
+         DESTINATION include/unsupported/Eigen)
++# nsync directory
++install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/nsync/install/include/
++        DESTINATION include)
