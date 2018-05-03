@@ -1,0 +1,10 @@
+diff --git a/tensorflow/contrib/cmake/tf_core_distributed_runtime.cmake b/tensorflow/contrib/cmake/tf_core_distributed_runtime.cmake
+index 2c1b6d1..ce9d8bb 100644
+--- a/tensorflow/contrib/cmake/tf_core_distributed_runtime.cmake
++++ b/tensorflow/contrib/cmake/tf_core_distributed_runtime.cmake
+@@ -60,4 +60,5 @@ target_link_libraries(grpc_tensorflow_server PUBLIC
+     tf_protos_cc
+     ${tf_core_gpu_kernels_lib}
+     ${tensorflow_EXTERNAL_LIBRARIES}
++    gomp
+ )

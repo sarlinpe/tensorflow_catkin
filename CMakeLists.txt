@@ -38,7 +38,7 @@ ExternalProject_Add(tensorflow_src
     -Dtensorflow_BUILD_SHARED_LIB=ON
     -Dtensorflow_BUILD_ALL_KERNELS=ON
     -Dtensorflow_BUILD_CONTRIB_KERNELS=ON
-    -Dtensorflow_ENABLE_GRPC_SUPPORT=OFF  # Needed by tf_protos_cc...
+    -Dtensorflow_ENABLE_GRPC_SUPPORT=ON  # Needed by tf_protos_cc...
     -Dtensorflow_ENABLE_SSL_SUPPORT=OFF
     -Dtensorflow_BUILD_CC_TESTS=OFF
     -Dtensorflow_BUILD_CC_EXAMPLE=OFF
