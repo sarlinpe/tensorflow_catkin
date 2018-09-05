@@ -1,3 +1,11 @@
+<p align="center">
+  <b>
+    [09/05/2019] tensorflow_catkin is now moving to <a href="https://github.com/ethz-asl/tensorflow_catkin">ethz-asl/tensorflow_catkin</a>.<br />
+    This repository will no longer be supported.
+    A usage example is provided in <a href="https://github.com/ethz-asl/hierarchical_loc">ethz-asl/hierarchical_loc</a>.
+  </b>
+</p>
+
 tensorflow_catkin
 ==============
 
